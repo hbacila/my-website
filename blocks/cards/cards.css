@@ -46,6 +46,10 @@
     transform: translate( -50%, -50% );
 }
 
+.cards > ul > li {
+    color: white;
+}
+
 .cards > ul > li a {
     color: white;
 }
