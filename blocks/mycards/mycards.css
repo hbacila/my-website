@@ -1,0 +1,55 @@
+.mycards > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 16px;
+}
+
+.mycards > ul > li {
+    border: 1px solid var(--highlight-background-color);
+}
+
+.mycards .cards-card-body {
+    text-align: center;
+}
+
+.mycards .cards-card-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.mycards .cards-card-body > *:first-child {
+    margin-top: 0;
+}
+
+.mycards > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.mycards > ul > li:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.cards-card-body {
+    position: relative;
+    top: -10%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.mycards > ul > li {
+    color: white;
+}
+
+.mycards > ul > li a {
+    color: white;
+}
