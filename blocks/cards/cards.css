@@ -9,15 +9,15 @@
 
 .cards > ul > li {
     border: 1px solid var(--highlight-background-color);
+    background-color: var(--background-color)
 }
 
 .cards .cards-card-body {
-    text-align: center;
+    margin: 16px;
 }
 
 .cards .cards-card-image {
     line-height: 0;
-    overflow: hidden;
 }
 
 .cards .cards-card-body > *:first-child {
@@ -28,24 +28,4 @@
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.cards > ul > li:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-}
-
-.cards-card-body {
-    position: relative;
-    top: -10%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-}
-
-.cards > ul > li a {
-    color: white;
 }
